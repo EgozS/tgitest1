@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap');
+body
+{
+    font-family: 'Heebo', sans-serif;
+    background-color: #C2E6FF;
+    margin: 0;
+}
+
+nav
+{
+    background-color: white;
+    text-align: right; /* Align text to the right */
+    height: 77px; /* Specify a height */
+    padding: 0 50px; /* Add some padding */
+    display: flex; /* Add flex display */
+    align-items: center; /* Vertically center-align children */
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+    font-size: 28px; /* Adjust the font size as needed */
+    direction: rtl; /* Right-to-left text direction for Hebrew */
+}
+
+
+.weather-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.weather-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    width: 295px;
+    height: 202px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.weather-card p, h1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.card-top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-top h1
+{
+    font-style: bold;
+    width: 70%;
+}
+
+#description
+{
+    color: #8F8F8F;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.temps {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.temp-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-text  {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+.temp-value
+{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+#icon1, #icon2, #icon3, #icon4
+{
+    width: 50px;
+    height: 50px;
+}
